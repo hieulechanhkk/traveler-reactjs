@@ -1,0 +1,378 @@
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+
+.Link {
+  
+  color: white;
+  text-decoration: none;
+  padding: 4px 25px;
+  margin: 22px 5px;
+  border-radius: 15px;
+}
+.Link:hover {
+  color: white;
+  background-image: linear-gradient(to right, #ff9800, #e91e63);
+}
+body {
+  width: 100%;
+  user-select: none;
+}
+.Wrapper {
+  background: url('./landscape.jpg');
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: 100% 100vh;
+  user-select: none;
+}
+
+.overlayer {
+  z-index: 1;
+  position: relative;
+  background-color:rgba(13,17,23,.6) ;
+  width: 100%;
+}
+.nav__bar {
+  color: white;
+  width: 100%;
+  height: auto;
+}
+
+.list__nav {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav__item {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.Logo {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 80px;
+}
+.Slider {
+  display: flex;
+  justify-content: center;
+  margin-top:20vh;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.heading {
+  font-weight: 800;
+  font-size: 60px;
+  color: white;
+}
+.heading__slogan {
+  font-weight:800;
+  font-size: 40px;
+  color: white;
+}
+
+.slogan {
+  font-size: 20px;
+  color: white;
+  margin-top:10px;
+}
+.container__nav {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.scroll__text {
+  color: white;
+  font-size:25px;
+}
+@keyframes pulse {
+   0%{ transform: translateY(0px);}
+   25%{transform: translateY(10px);}
+   50%{transform:translateY(15px);}
+   75%{transform: translateY(10px);}
+   100%{transform: translateY(0);}
+  }
+.down__button {
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 0px 30px;
+  border-radius: 20px;
+  -webkit-animation: pulse 2s linear infinite;
+  font-size: 40px;
+}
+.down__button a {
+  color: white;
+  text-decoration: none;
+}
+.content {
+  margin-top: 70px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.content__heading {
+  text-align: center;
+  color: white;
+  border-bottom: white solid 1px;
+  border-top: white solid 1px;
+  padding: 10px 0;
+}
+.content__heading span{
+  font-size: 30px;
+  font-weight: 500;
+}
+.ticket__introduction {
+  margin:20px 10px;
+  display: flex;
+  flex-direction: column;
+}
+.ticket__item {
+  width: 40%;
+  height: 300px;
+  border-radius: 10px;
+  margin:60px 0;
+  border: white solid 6px;
+}
+.ticket__img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+.ticket__right{
+  align-self: flex-end;
+}
+
+
+.heading__text {
+  position: absolute;
+  top: 40%;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+}
+.btn__ticket {
+  position: absolute;
+  bottom: 10%;
+  left: 40%;
+  border-radius: 10px;
+  background-color: rgba(13,17,23,.8);
+  color: white;
+  font-weight: 500;
+  padding: 7px;
+  font-size: 13px;
+  border: white solid 2px;
+}
+.btn__ticket:hover {
+  background-color: rgba(13,17,23,1);
+}
+@keyframes zoomIn {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+}
+.container__fill {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow:hidden;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: zoomIn 0.5s;
+}
+.container__infor {
+  background-color: rgba(13,17,23,.8);
+  width: 70%;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.radio__group {
+  display: flex;
+  margin:10px;
+  justify-content: space-between;
+}
+.choose__way {
+  width: 15px;
+  height: 15px;
+}
+.radio {
+  margin:0 10px;
+}
+.list__input {
+  display: flex;
+  flex-wrap:wrap;
+}
+.radio span {
+  color: white;
+  margin:0 10px;
+}
+.form__input {
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 0 0;
+}
+.radio__choose {
+  display: flex;
+}
+.img__ticket{
+  width: 40%;
+  border: white solid 4px;
+  border-radius: 10px;
+}
+.title__input {
+  color: white;
+  font-size: 12px;
+  margin:10px 0 0px 15px;
+}
+.input__text{
+  border-radius: 15px;
+  border: none;
+  font-size: 17px;
+  line-height: 17px;
+  padding:6px;
+  margin: 10px;
+  width: 80%;
+}
+
+
+
+
+
+.amount__form {
+  background-color: white;
+  padding: 3px 10px;
+  border-radius: 15px;
+  margin:10px 12px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.amount__form span {
+  font-size: 18px;
+}
+.btn__amount {
+  border:none;
+  background-color: white;
+}
+.select__input {
+  border-radius: 15px;
+  padding: 5px 7px;
+  cursor: pointer;
+  margin:10px 9px;
+  width: 25%;
+}
+
+
+
+.btn__checkout {
+  border-radius: 10px;
+  background-color: rgba(13,17,23,.8);
+  color: white;
+  font-weight: 500;
+  padding: 7px 40px;
+  font-size: 13px;
+  border: white solid 2px;
+}
+
+
+/* This is HomePage */
+
+
+.HomePage {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 88vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form__about {
+  background-color: rgba(13,17,23,.6);
+  height: 50%;
+  width: 30%;
+  border-radius: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  border: white solid 2px;
+}
+@keyframes moveX {
+  0% {transform:translateX(0px);}
+  25% {transform: translateX(5px);}
+  35% {transform: translateX(10px);}
+  50%{transform: translateX(20px);}
+  65% {transform: translateX(10px);}
+  75%{transform: translateX(5px);}
+  100%{transform:translateX(0px);}
+}
+.btn__goto{
+  border:none;
+  border-radius: 15px;
+  padding: 6px 20px;
+  font-weight: 500;
+  font-size:40px;
+  color: white;
+  background-color: transparent;
+  -webkit-animation: moveX 2s linear infinite;
+}
+@keyframes fadeOut {
+   to {
+     display: none;
+   }
+}
+
+.choose__btn {
+  color: white;
+  background-image: linear-gradient(to right, #ff9800, #e91e63);
+}
+
+.title__homepage {
+  margin:30px 0;
+  font-weight: 500;
+  color: white;
+}
+
+.content__homepage {
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+.btn__homepage {
+  border-radius: 20px;
+  padding:5px 25px;
+  border:none;
+  color:white;
+  background-image: linear-gradient(to right, #ff9800, #e91e63);
+  font-weight: 500;
+}

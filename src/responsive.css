@@ -1,0 +1,88 @@
+
+
+@media screen and (max-width: 500px) {
+    .list__nav {
+        justify-content: normal;
+    }
+    .Link{
+        padding: 0px 10px;
+    }
+    .nav__item {
+        padding: 0px 0px;
+        margin:0 0px;
+    }
+    .ticket__item{
+        width: 100%;
+    }
+    .content {
+        width: 76%;
+        overflow: hidden;
+        overflow-x:hidden;
+    }
+    .ticket__introduction {
+        display: block;
+    }
+    .btn__ticket {
+        left:35%;
+    }
+    .radio__group {
+        display: block;
+    }
+    .radio__choose {
+        display: block;
+    }
+    .list__input {
+        display: block;
+    }
+    .img__ticket {
+        display: none;
+    }
+    .title__input {
+        margin-top:0;
+    }
+    .input__text {
+        width: 100%;
+    }
+    .select__input{
+        width: 93%;
+    }
+    .btn__checkout {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .Logo {
+        width: 60px;
+    }.form__about {
+        width: 60%;
+        overflow-wrap: anywhere;
+    }
+    .btn__goto {
+        font-size:11px;
+        padding: 6px 10px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    .Link{
+        padding: 0px 10px;
+    }
+    .nav__item {
+        padding: 0px 0px;
+        margin:0 0px;
+    }
+    .btn__ticket {
+        left: 32%;
+    }
+    .Logo {
+        top:15px;
+        width: 50px;
+    }
+    .btn__homepage {
+        font-size: 15px;
+    }
+    .content__homepage {
+        font-size: 15px;
+    }
+}
